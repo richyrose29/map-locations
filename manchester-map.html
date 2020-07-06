@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Manchester Map</title>
+
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/navigation-icons.css">
+    <link rel="stylesheet" href="css/slicknav/slicknav.min.css">
+    <script src="https://kit.fontawesome.com/04ffca717e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/mapstyle.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT-_QhDUQog3OFxUlSxC3gvMEncUUzLwc&callback=initMap">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <div class="nav-container">
+        <nav class="menu-navigation-icons">
+
+            <a href="liverpool-map.html" class="menu-magenta"><i
+                    class="fas fa-map-marker-alt"></i><span>Liverpool</span></a>
+            <a href="manchester-map.html" class="menu-blue"><i
+                    class="fas fa-map-marker-alt"></i><span>Manchester</span></a>
+            <a href="brum-map.html" class="menu-yellow"><i
+                    class="fas fa-map-marker-alt"></i></i><span>Birmingham</span></a>
+            <a href="london-map.html" class="menu-green"><i
+                    class="fas fa-map-marker-alt"></i></i><span>London</span></a>
+
+        </nav>
+    </div>
+
+
+    <div class="title">
+        <h1 class="local-title">Manchester</h1>
+
+    </div>
+    <div class="container">
+        <div id="map"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="assets/slicknav/jquery.slicknav.min.js"></script>
+    <script src="script/manc-map.js"></script>
+
+    <script>
+        $(function () {
+            $('.menu-navigation-icons').slicknav();
+        });
+    </script>
+
+</body>
+
+</html>

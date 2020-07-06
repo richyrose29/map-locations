@@ -1,0 +1,53 @@
+  <iframe
+      src="https://www.atlistmaps.com/map/e234fc90-5b7a-45d8-a77c-4bf00fa1153d?share=true"
+      allow="geolocation"
+      width="100%"
+      height="400px"
+      frameborder="0"
+      scrolling="no"
+    ></iframe>
+
+
+
+
+
+    $('#location-button').click(function () {
+    if (navigator.geolocation)
+        navigator.geolocation.getCurrentPosition(function (position) {
+            console.log(position);
+        });
+    else {
+        console.log("geolocation is not supported");
+    }
+});
+
+
+simple get users location and load map code: 
+
+function initMap() {
+     x = navigator.geolocation;
+
+     x.getCurrentPosition(success, failure);
+
+     function success(position) {
+         var myLat = position.coords.latitude;
+         var myLng = position.coords.longitude;
+
+         var coords = new google.maps.LatLng(myLat, myLng);
+
+         var mapOptions = {
+             zoom: 9,
+             center: coords,
+             mapTypeId: google.maps.MapTypeId.ROADMAP
+         }
+
+         var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+         var marker = new google.maps.Marker({
+             map: map,
+             position: coords
+         });
+
+     }
+
+     function failure() {}
+ }

@@ -1,0 +1,110 @@
+.menu-navigation-icons {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 0;
+}
+
+.menu-navigation-icons a {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #232526;
+    font-size: 40px;
+    font-weight: bold;
+    box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    width: 136px;
+    height: 109px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.menu-navigation-icons a:hover {
+    opacity: 0.92;
+}
+
+.menu-navigation-icons a i {
+    display: block;
+    line-height: 2;
+}
+
+.menu-navigation-icons a span {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 0;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu colors */
+
+.menu-navigation-icons a.menu-magenta {
+    background: #52A0FD;
+    background: -webkit-gradient(linear, left top, right top, from(#52A0FD), color-stop(80%, #00e2fa), to(#00e2fa));
+    background: linear-gradient(to right, #52A0FD 0%, #00e2fa 80%, #00e2fa 100%);
+}
+
+.menu-navigation-icons a.menu-magenta i {
+    color: white;
+}
+
+.menu-navigation-icons a.menu-blue {
+    background: #44ea76;
+    background: -webkit-gradient(linear, left top, right top, from(#44ea76), color-stop(80%, #39fad7), to(#39fad7));
+    background: linear-gradient(to right, #44ea76 0%, #39fad7 80%, #39fad7 100%);
+}
+
+.menu-navigation-icons a.menu-blue i {
+    color: white;
+}
+
+.menu-navigation-icons a.menu-green {
+    background: #fa6c9f;
+    background: -webkit-gradient(linear, left top, right top, from(#fa6c9f), color-stop(80%, #ffe140), to(#ffe140));
+    background: linear-gradient(to right, #fa6c9f 0%, #ffe140 80%, #ffe140 100%);
+}
+
+.menu-navigation-icons a.menu-green i {
+    color: white;
+}
+
+.menu-navigation-icons a.menu-yellow {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.menu-navigation-icons a.menu-yellow i {
+    color: white;
+}
+
+.menu-navigation-icons a.menu-red {
+    background-color: #f26262;
+}
+
+.menu-navigation-icons a.menu-red i {
+    color: #d34646;
+}
+
+/* Make this page responsive */
+
+.slicknav_menu {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .menu-navigation-icons {
+        display: none;
+    }
+
+    .slicknav_nav a i {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
+}
+
+.fa-map-marker-alt {
+    color: black;
+}
